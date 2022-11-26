@@ -1,16 +1,17 @@
 import { useState } from "react";
 
 const Item = (props) => {
-    const [clicked, setClicked] = useState("false");
+    const [clicked, setClicked] = useState(false);
 
     const onClickHandler = () => {
+        console.log("click handler called");
         setClicked(!clicked);
     }
     
     return (
         <div 
             onClick={onClickHandler}
-            className={clicked ? "Clicked Item" : "Item"}
+            className={clicked ? "clicked item" : "item"}
         >
             {props.name}
         </div>

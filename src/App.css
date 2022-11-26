@@ -22,4 +22,5 @@
 
 .clicked {
   text-decoration: line-through;
+  font-size: larger;
 }
