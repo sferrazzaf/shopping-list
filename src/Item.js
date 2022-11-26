@@ -10,7 +10,7 @@ const Item = (props) => {
     return (
         <div 
             onClick={onClickHandler}
-            className={clicked ? "clicked item" : "item"}
+            className={clicked ? "Clicked Item" : "Item"}
         >
             {props.name}
         </div>
